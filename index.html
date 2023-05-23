@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar nav-expand-lg bg-light fixed-top d-lg-none">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -31,10 +31,10 @@
           </div>
     </nav>
 
-    <!-- Container -->
+    <!-- CONTAINER -->
     <div class="container-fluid main gx-0 p-0">
 
-        <!-- sidebar -->
+        <!-- SIDEBAR -->
         <div class="d-none d-lg-block sidebar" id="navbarSupportedContent">
             <div class="profile-wrapper d-flex justify-content-center align-items-center flex-column">
                 <img src="https://images.unsplash.com/photo-1684619419581-39800cb71285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
@@ -61,7 +61,7 @@
             </nav>
         </div>
 
-        <!-- right content -->
+        <!-- RIGHT CONTENT -->
         <div class="rightContainer">
             <div class="content">
                 <div class="tab-content" id="myTabContent">
@@ -104,12 +104,138 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- ABOUT -->
+                    <div class="tab-pane fade" id="aboutTab" role="tabpanel" aria-labelledby="aboutMe" tabindex="0">
+
+                        <!-- TAG -->
+                        <div class="tag">
+                            <i class="fas fa-user"></i>
+                            <p class="m-0">About Me</p>
+                        </div>
+
+                        <!-- CARD SECTION -->
+                        <div class="mt-5 about">
+                            
+                            <!-- INTRO -->
+                            <div class="row">
+                                <div class="col-sm-9 col-lg-7 cardSec">
+                                    <div class="cardWrapper">
+                                        <div class="introHeader">
+                                            <i class="far fa-comment-dots"></i>
+                                            <h2 class="m-0">Hello!</h2>
+                                        </div>
+                                        <div class="txtContainer mt-4">
+                                            <div class="txtGroup">
+                                                <p class="m-0">It's nice to meet you. </p>
+                                                <p class="m-0">I recently graduated from YPC International College with a major in multimedia computing.</p>
+                                            </div>
+                                            <div class="txtGroup">
+                                                <p class="m-0">You can refer to me as Claris Len.</p>
+                                                <p class="m-0">I am currently learning server-side scripting languages to enhance my professional expertise.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-3 col-lg-5 cardSec">
+                                    <div class="cardWrapper">
+                                        <img src="https://images.unsplash.com/photo-1682687982185-531d09ec56fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WORK & EDUCATION -->
+                            <div class="row workEdu mt-4">
+
+                                <!-- WORK -->
+                                <div class="col-sm-12 col-lg-5">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="cardWrapper">
+                                                <h3 class="m-0 mb-4">Work Experience</h3>
+                                                <p class="m-0 title">Frontend Developer</p>
+                                                <p class="m-0 location">Huacomm Telecommunications (M) Sdn. Bhd</p>
+                                                <div class="tag">
+                                                    <p class="m-0 date">Jun 2022 - Dec 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mt-4">
+                                            <div class="cardWrapper">
+                                                <h3 class="m-0 mb-4">What I do</h3>
+                                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                                    <div class="iconWrapper d-flex flex-column align-items-center">
+                                                        <i class="fas fa-pencil-ruler fs-3"></i>
+                                                        <p class="m-0 fw-light">Design</p>
+                                                    </div>
+                                                    <div class="iconWrapper d-flex flex-column align-items-center">
+                                                        <i class="fas fas fa-code fs-3"></i>
+                                                        <p class="m-0 fw-light">Develop</p>
+                                                    </div>
+                                                    <div class="iconWrapper d-flex flex-column align-items-center">
+                                                        <i class="fas fa-tasks fs-3"></i>
+                                                        <p class="m-0 fw-light">Testing</p>
+                                                    </div>
+                                                    <div class="iconWrapper d-flex flex-column align-items-center">
+                                                        <i class="fas fa-chart-line fs-3"></i>
+                                                        <p class="m-0 fw-light">Improvise</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- EDUCATION -->
+                                <div class="col-sm-12 col-lg-7">
+                                    <div class="cardWrapper d-flex justify-content-center flex-column">
+
+                                        <h3 class="m-0 mb-4">Education</h3>
+
+                                        <!-- FIRST -->
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <p class="m-0 title">BSc Hons. Multimedia Computing</p>
+                                                <p class="m-0 location">YPC International College in collaboration with Liverpool John Moores University (LJMU)</p>
+                                                <div class="tag">
+                                                    <p class="m-0 date">Apr 2019 - Jan 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="eduImg-container d-flex flex-column flex-wrap">
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle d-flex align-items-center viewBtn" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="far fa-eye"></i>View Letters
+                                                    </a>
+                                                  
+                                                    <ul class="dropdown-menu">
+                                                      <li><a class="dropdown-item" href="#">View YPC Completion Letter</a></li>
+                                                      <li><a class="dropdown-item" href="#">View LJMU Completion Letter</a></li>
+                                                    </ul>
+                                                </div>
+                                                <a class="d-flex align-items-center viewBtn" href=""><i class="far fa-eye"></i>View Result</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- SECOND -->
+                                        <div class="mt-4">
+                                            <p class="m-0 title">Sijil Pelajaran Malaysia</p>
+                                            <p class="m-0 location">Sekolah Menengah Kebangsaan Bandar Damai Perdana</p>
+                                            <div class="tag">
+                                                <p class="m-0 date">2013 - 2017</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
 
 
-
-                    <div class="tab-pane fade" id="aboutTab" role="tabpanel" aria-labelledby="aboutMe" tabindex="0">2</div>
                     <div class="tab-pane fade" id="skillTab" role="tabpanel" aria-labelledby="skill" tabindex="0">3</div>
                     <div class="tab-pane fade" id="projectTab" role="tabpanel" aria-labelledby="project" tabindex="0">project</div>
                     <div class="tab-pane fade" id="graphicTab" role="tabpanel" aria-labelledby="graphicDesign" tabindex="0">lorem200</div>

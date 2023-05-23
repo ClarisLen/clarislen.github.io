@@ -110,7 +110,7 @@ body{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
     width: fit-content;
 }
 
@@ -147,6 +147,86 @@ body{
     border-radius: 5px;
 }
 
+/* ABOUT */
+.introHeader{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.introHeader i,
+.introHeader p,
+.introHeader h2{
+    color: white;
+    font-size: 2.25rem;
+}
+
+.introHeader i{
+    transform: scaleX(-1);
+}
+
+.about .txtContainer{
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+
+/* WORK AND EDUCATION */
+.workEdu h3{
+    font-size: 1.5rem;
+}
+
+.workEdu .title{
+    font-size: 1rem;
+}
+
+.workEdu .location{
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    max-width: calc(100% - 100px);
+}
+
+.workEdu .tag{
+    margin-top: 0.75rem;
+}
+
+.tag .date{
+    font-size: 0.75rem;
+}
+
+.iconWrapper{
+    gap: 0.5rem;
+    padding: 0.625rem;
+    width: calc(100% - (100% - 70px));
+}
+
+/* EDUCATION */
+.eduImg-container{
+    gap: 0.5rem;
+}
+
+.eduImg-container .viewBtn{
+    text-decoration: none;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 0.75rem;
+    transition: 0.4s all ease;
+}
+
+.eduImg-container i{
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.eduImg-container .viewBtn:hover{
+    background-color: var(--lightGray);
+}
 
 @media only screen and (min-width:768px){
     
