@@ -44,7 +44,7 @@ body{
 .profileTxt{
     font-size: 24px;
     color: #f0f0f0;
-    font-weight:500;
+    font-weight: 500;
 }
 
 /* SIDEBAR LINKS */
@@ -87,15 +87,64 @@ body{
     color: white;
 }
 
-
-
-
 /* RIGHT CONTAINER */
 .rightContainer{
     position: relative;
     left: 270px;
     min-height:100vh;
     width: calc(100vw - 270px);
+}
+
+.content{
+    padding: 6rem 4rem;
+}
+
+.homeHeader h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.tag{
+    border: 1px solid #3F414B;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.tag i,
+.tag p{
+    color: var(--lightGray);
+    font-size: 16px;
+}
+
+.cardWrapper{
+    border: 1px solid #3F414B;
+    border-radius: 5px;
+    padding:1rem;
+    height:100%;
+}
+
+.cardSec{
+    min-height:100%;
+}
+
+.cardSec i{
+    color: #3F414B;
+    font-size: 1rem;
+}
+
+.imgWrapper{
+    height:300px;
+}
+
+.cardWrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 
