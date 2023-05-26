@@ -13,14 +13,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/frontendP/javascript/lightbox.js"></script>
     <script src="/javascript/tabActive.js"></script>
+    <script src="/javascript/cursorHover.js"></script>
 </head>
 <body>
+    <!-- CURSOR -->
+    <div class="cursor hidden"></div>
+    
     <!-- NAVBAR -->
     <nav class="navbar nav-expand-lg fixed-top d-lg-none navbar-dark topNav">
         <div class="container-fluid">
             <a class="navbar-brand">
                 <div class="d-flex align-items-center gap-3 topProfile">
-                    <img src="https://source.unsplash.com/random/?city" alt="">
+                    <img src="/images/profile-small.png" alt="">
                     <p class="m-0">Low Jia Wing</p>
                 </div>
             </a>
@@ -36,7 +40,7 @@
         <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="profile-wrapper d-flex justify-content-center align-items-center flex-column">
-                <img src="https://images.unsplash.com/photo-1685013638440-0a4b83767e18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="/images/profile-small.png" alt="">
                 <p class="profileTxt m-0">Low Jia Wing</p>
             </div>
             <nav>
@@ -95,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-6 cardSec">
+                            <div class="col-sm-12 col-lg-6 cardSec mt-4 mt-lg-0">
                                 <div class="cardWrapper">
                                     <div class="imgWrapper">
                                         <img class="img-fluid" src="/images/image29.png" alt="">
@@ -143,7 +147,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-4 col-lg-5 mt-4 mt-md-0 cardSec">
-                                    <div class="cardWrapper profileAbout">
+                                    <div class="cardWrapper">
                                         <img src="/images/profile-bg-gray.png" alt="">
                                     </div>
                                 </div>
@@ -198,7 +202,7 @@
                                         <h3 class="m-0 mb-4">Education</h3>
 
                                         <!-- FIRST -->
-                                        <div class="d-flex justify-content-between">
+                                        <div class="d-flex justify-content-between eduWrapper">
                                             <div>
                                                 <p class="m-0 title">BSc Hons. Multimedia Computing</p>
                                                 <p class="m-0 location">YPC International College in collaboration with Liverpool John Moores University (LJMU)</p>
@@ -206,7 +210,7 @@
                                                     <p class="m-0 date">Apr 2019 - Jan 2023</p>
                                                 </div>
                                             </div>
-                                            <div class="eduImg-container d-flex flex-column flex-wrap">
+                                            <div class="eduImg-container d-flex flex-wrap">
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle d-flex align-items-center viewBtn" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <i class="far fa-eye"></i>View Letters
@@ -573,6 +577,14 @@
 
                 </div>
             </div>
+
+            <footer>
+                <div class="container-fluid m-0">
+                    <div class="d-flex justify-content-center align-items-center pb-4">
+                        <p class="fw-light m-0">Created by Low Jia Wing | 2023.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
 
     </div>

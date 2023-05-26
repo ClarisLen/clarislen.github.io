@@ -47,6 +47,12 @@ body{
     opacity: 1;
 }
 
+.sidebar .profile-wrapper img,
+.topProfile img{
+    object-fit: cover;
+    object-position: 80% 80%;
+}
+
 .sidebar.hide{
     width: 0;
 }
@@ -131,18 +137,26 @@ body{
 }
 
 .homeHeader h1{
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: clamp(1.5rem, 1.35rem + 0.8vw, 2.25rem);
     font-weight: 400;
 }
 
 #homeTab i.fa-chevron-right{
     padding: 0.45rem 0.65rem;
     border-radius: 50%;
-    border: 1px solid var(--lightGray);
+    border: 2px solid #3F414B;
+    transition: 0.4s all ease;
 }
 
 #homeTab .cardWrapper:hover{
     cursor: pointer;
+}
+
+#homeTab .cardWrapper:hover i.fa-chevron-right{
+    cursor: pointer;
+    border-color:white;
+    color:white;
 }
 
 .tag{
@@ -189,10 +203,6 @@ body{
 }
 
 /* ABOUT */
-.profileAbout img{
-    max-height: 300px;
-}
-
 .introHeader{
     display: flex;
     align-items: center;
@@ -203,7 +213,7 @@ body{
 .introHeader p,
 .introHeader h2{
     color: white;
-    font-size: 2.25rem;
+    font-size: clamp(1.5rem, 1.35rem + 0.8vw, 2.25rem);
 }
 
 .introHeader i{
@@ -211,8 +221,8 @@ body{
 }
 
 .about .txtContainer{
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: clamp(1rem, 0.93rem + 0.26vw, 1.25rem);
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -252,6 +262,7 @@ body{
 /* EDUCATION */
 .eduImg-container{
     gap: 0.5rem;
+    flex-direction: column;
 }
 
 .eduImg-container .viewBtn{
@@ -701,6 +712,53 @@ body.lb-disable-scrolling {
     object-fit: cover;
 }
 
+/* FOOTER */
+footer p{
+    color: var(--lightGray);
+    font-size: clamp(12px, 13px + 0.25vw ,16px);
+}
+
+/* CURSOR */
+.cursor{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    animation: cursorAni .8s infinite alternate;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.cursor.hidden{
+    display: none;
+}
+
+.cursor::after{
+    content: "" url(/images/cursor.svg);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5s;
+    left:-8;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    animation: cursorAni .8s infinite alternate;
+
+}
+
+@keyframes cursorAni{
+    from{
+        transform: scale(1);
+    } to{
+        transform: scale(.9);
+    }
+}
 
 /* sm-md */
 @media only screen and (max-width: 991.5px){
@@ -717,6 +775,21 @@ body.lb-disable-scrolling {
         justify-content: center;
     }
 
+    /* ABOUT ME */
+    .eduWrapper{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .eduImg-container{
+        flex-direction: row;
+    }
+
+    .workEdu .location{
+        max-width: 100%;
+    }
+
+    /* GRID IMAGE */
     .vStretch{
         grid-row: span 1;
     }
