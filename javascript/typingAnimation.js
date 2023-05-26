@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     let typed = new Typed(".autoType", {
-        strings: ["Software Development.", "Mobile Application.", "Scripting Languages.","Game Development"],
-        typeSpeed: 100,
+        strings: ["Software Development.", "Mobile Application.", "Game Development.","Coding."],
+        typeSpeed: 120,
         backSpeed: 50,
         loop: true
     })
