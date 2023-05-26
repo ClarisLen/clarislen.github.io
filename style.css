@@ -14,8 +14,23 @@
 }
 
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-color: var(--primaryColor);
+}
+
+/* TOP NAV */
+.topNav{
+    background-color: var(--secondaryColor);
+}
+
+.topNav button{
+    border: none;
+}
+
+.topNav .topProfile img{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
 }
 
 /* SIDEBAR */
@@ -27,7 +42,22 @@ body{
     top: 0;
     bottom: 0;
     width: 270px;
+    transition: 1.5s all ease;
+    z-index: 1500;
+    opacity: 1;
 }
+
+.sidebar.hide{
+    width: 0;
+}
+
+.sidebar.hide > div,
+.sidebar.hide > nav{
+    display: none;
+    opacity: 0;
+    transition: 0.8s all ease;
+}
+
 
 /* PROFILE */
 .profile-wrapper{
@@ -93,6 +123,7 @@ body{
     left: 270px;
     min-height:100vh;
     width: calc(100vw - 270px);
+    transition: 1.5s all ease;
 }
 
 .content{
@@ -102,6 +133,12 @@ body{
 .homeHeader h1{
     font-size: 36px;
     font-weight: 400;
+}
+
+#homeTab i.fa-chevron-right{
+    padding: 0.45rem 0.65rem;
+    border-radius: 50%;
+    border: 1px solid var(--lightGray);
 }
 
 .tag{
@@ -656,8 +693,22 @@ body.lb-disable-scrolling {
     object-fit: cover;
 }
 
-/* 576 */
-@media only screen and (max-width:768px){ 
+
+/* sm-md */
+@media only screen and (max-width: 991.5px){
+
+    /* RIGHTSIDE CONTENT */
+    .rightContainer{
+        left: 0;
+        width: 100%;
+    }
+
+    .content{
+        padding: 8rem 1rem 3rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
     .vStretch{
         grid-row: span 1;
     }
