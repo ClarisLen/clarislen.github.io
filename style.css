@@ -41,7 +41,6 @@ body{
     left: 0;
     top: 0;
     bottom: 0;
-    width: 270px;
     transition: 1.5s all ease;
     z-index: 1500;
     opacity: 1;
@@ -53,14 +52,14 @@ body{
     object-position: 80% 80%;
 }
 
-.sidebar.hide{
-    width: 0;
+.sidebar.show{
+    width: 270px;
 }
 
-.sidebar.hide > div,
-.sidebar.hide > nav{
-    display: none;
-    opacity: 0;
+.sidebar.show > div,
+.sidebar.show > nav{
+    display: block;
+    opacity: 1;
     transition: 0.8s all ease;
 }
 
@@ -760,8 +759,24 @@ footer p{
     }
 }
 
+@media only screen and (max-width:2500px){
+    .sidebar{
+        width: 270px;
+    }
+}
+
 /* sm-md */
 @media only screen and (max-width: 991.5px){
+
+    .sidebar{
+        width: 0px;
+    }
+
+    .sidebar > div,
+    .sidebar > nav{
+        display: none;
+        opacity: 0;
+    }
 
     /* RIGHTSIDE CONTENT */
     .rightContainer{
@@ -802,4 +817,16 @@ footer p{
         grid-column: span 1;
         grid-row: span 1;
     }
+    
+    /* CURSOR */
+    .cursor{
+        display: none !important;
+    }
+    
+    #homeTab .cardSec .cardWrapper:hover,
+    #projectTab .cardWrapper a:hover,
+    #graphicTab a:hover{
+        cursor: pointer !important;
+    }
 }
+

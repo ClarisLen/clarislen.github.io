@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // DIRECT TO OTHER TAB
     let links = document.querySelectorAll("#homeTab .cardSec .cardWrapper");
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let sidebarShow = document.querySelector(".sidebar");
 
     hamburger.addEventListener("click", () => {
-        sidebarShow.classList.toggle("hide");
+        sidebarShow.classList.toggle("show");
     })
 
     // FROM MOBILE TO DESKTOP EXPAND
@@ -24,15 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // MOBILE
         if (window.innerWidth < 991.5){
-            if (!sidebarShow.classList.contains("hide")){
-                sidebarShow.classList.add("hide");
+            if (sidebarShow.classList.contains("show")){
+                sidebarShow.classList.remove("show");
             } 
         } 
         
         // DESKTOP
         else{
-            if(sidebarShow.classList.contains("hide")){
-                sidebarShow.classList.remove("hide");
+            if(!sidebarShow.classList.contains("show")){
+                sidebarShow.classList.add("show");
             }
         }
     })
