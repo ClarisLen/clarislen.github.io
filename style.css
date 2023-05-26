@@ -141,6 +141,10 @@ body{
     border: 1px solid var(--lightGray);
 }
 
+#homeTab .cardWrapper:hover{
+    cursor: pointer;
+}
+
 .tag{
     border: 1px solid #3F414B;
     border-radius: 5px;
@@ -185,6 +189,10 @@ body{
 }
 
 /* ABOUT */
+.profileAbout img{
+    max-height: 300px;
+}
+
 .introHeader{
     display: flex;
     align-items: center;
