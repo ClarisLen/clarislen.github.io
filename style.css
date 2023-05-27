@@ -41,7 +41,7 @@ body{
     left: 0;
     top: 0;
     bottom: 0;
-    transition: 1.5s all ease;
+    transition: 1s all ease;
     z-index: 1500;
     opacity: 1;
 }
@@ -60,7 +60,7 @@ body{
 .sidebar.show > nav{
     display: block;
     opacity: 1;
-    transition: 0.8s all ease;
+    transition: 0.5s all ease;
 }
 
 
@@ -128,7 +128,7 @@ body{
     left: 270px;
     min-height:100vh;
     width: calc(100vw - 270px);
-    transition: 1.5s all ease;
+    transition: 1s all ease;
 }
 
 .content{
