@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     let homeLinks = document.querySelectorAll("#homeTab .cardSec .cardWrapper");
-    let projectLinks = document.querySelector("#projectTab .cardWrapper a");
+    let projectLinks = document.querySelectorAll("#projectTab .cardWrapper a");
     let graphicLinks = document.querySelectorAll("#graphicTab a");
     const cursor = document.querySelector(".cursor");
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // CLASS ARRAY LOOP EVENTS
     function arrAddEvent(){
-        let classArr = [...homeLinks, projectLinks, ...graphicLinks];
+        let classArr = [...homeLinks, ...projectLinks, ...graphicLinks];
         for (let i = 0; i < classArr.length; i++){
             classArr[i].addEventListener('mousemove', mouseHover);
             classArr[i].addEventListener('mouseout', mouseExit);
