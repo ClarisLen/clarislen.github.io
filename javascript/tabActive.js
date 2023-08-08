@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     // DIRECT TO OTHER TAB
     let links = document.querySelectorAll("#homeTab .cardSec .cardWrapper");

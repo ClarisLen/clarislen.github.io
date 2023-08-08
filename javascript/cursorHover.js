@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
 
     let homeLinks = document.querySelectorAll("#homeTab .cardSec .cardWrapper");
     let projectLinks = document.querySelectorAll("#projectTab .cardWrapper a");
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function arrAddEvent(){
         let classArr = [...homeLinks, ...projectLinks, ...graphicLinks];
         for (let i = 0; i < classArr.length; i++){
-            classArr[i].addEventListener('mousemove', mouseHover);
-            classArr[i].addEventListener('mouseout', mouseExit);
+            classArr[i].addEventListener("mousemove", mouseHover);
+            classArr[i].addEventListener("mouseout", mouseExit);
         }
     }
 

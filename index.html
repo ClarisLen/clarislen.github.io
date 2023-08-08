@@ -14,6 +14,7 @@
     <script src="/javascript/lightbox.js"></script>
     <script src="/javascript/tabActive.js"></script>
     <script src="/javascript/cursorHover.js"></script>
+    <script src="/javascript//loadImages.js"></script>
     
     <!-- TEXT ANIMATION -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -169,8 +170,13 @@
                                                 <h3 class="m-0 mb-4">Work Experience</h3>
                                                 <p class="m-0 title">Frontend Developer</p>
                                                 <p class="m-0 location">Huacomm Telecommunications (M) Sdn. Bhd</p>
-                                                <div class="tag">
-                                                    <p class="m-0 date">Jun 2022 - Dec 2022</p>
+                                                <div class="d-flex gap-2">
+                                                    <div class="tag">
+                                                        <p class="m-0 date">Jun 2022 - Dec 2022</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p class="m-0 date">July 2023 (Project Based)</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -215,19 +221,6 @@
                                                     <p class="m-0 date">Apr 2019 - Jan 2023</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="eduImg-container d-flex flex-wrap">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle d-flex align-items-center viewBtn" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="far fa-eye"></i>View Letters
-                                                    </a>
-                                                  
-                                                    <ul class="dropdown-menu">
-                                                      <li><a class="dropdown-item" href="doc/Low Jia Wing(Completion Letter ypc).jpg">View YPC Completion Letter</a></li>
-                                                      <li><a class="dropdown-item" href="doc/LJMU completion letter.png">View LJMU Completion Letter</a></li>
-                                                    </ul>
-                                                </div>
-                                                <a class="d-flex align-items-center viewBtn" href="doc/Liverpool John Moores University Progress Transcript-1.jpg"><i class="far fa-eye"></i>View Result</a>
-                                            </div> -->
                                         </div>
 
                                         <!-- SECOND -->
@@ -483,102 +476,105 @@
                                     <img src="../images/image10.jpg" alt="" id="img-1">
                                 </a>
                             </div>
-                            <div class="vStretch">
+                            <div class="vStretch hidden">
                                 <a href="../images/image18.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image18.jpg" alt="" id="img-1">
+                                    <img src="../images/image18.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="hStretch">
+                            <div class="hStretch hidden">
                                 <a href="../images/image12.jpg" target="_blank" data-lightbox="gridImg" data-title="Milk Tea Logo">
-                                    <img src="../images/image12.jpg" alt="" id="img-1">
+                                    <img src="../images/image12.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div>
+                            <div class="hidden">
                                 <a href="../images/image13.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image13.jpg" alt="" id="img-1">
+                                    <img src="../images/image13.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="hStretch">
+                            <div class="hStretch hidden">
                                 <a href="../images/image14.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image14.jpg" alt="" id="img-1">
+                                    <img src="../images/image14.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="lgStretch">
+                            <div class="lgStretch hidden">
                                 <a href="../images/image15.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image15.jpg" alt="" id="img-1">
+                                    <img src="../images/image15.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="vStretch">
+                            <div class="vStretch hidden">
                                 <a href="../images/image16.jpg" target="_blank" data-lightbox="gridImg" data-title="Seasonal Branding Mockup">
-                                    <img src="../images/image16.jpg" alt="" id="img-1">
+                                    <img src="../images/image16.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="lgStretch">
+                            <div class="lgStretch hidden">
                                 <a href="../images/image17.jpg" target="_blank" data-lightbox="gridImg" data-title="Seasonal Branding Mockup">
-                                    <img src="../images/image17.jpg" alt="" id="img-1">
+                                    <img src="../images/image17.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div>
+                            <div class="hidden">
                                 <a href="../images/image11.jpg" target="_blank" data-lightbox="gridImg" data-title="Milk Tea Logo">
-                                    <img src="../images/image11.jpg" alt="" id="img-1">
+                                    <img src="../images/image11.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div>
+                            <div class="hidden">
                                 <a href="../images/image19.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image19.jpg" alt="" id="img-1">
+                                    <img src="../images/image19.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div>
+                            <div class="hidden">
                                 <a href="../images/image20.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image20.jpg" alt="" id="img-1">
+                                    <img src="../images/image20.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div>
+                            <div class="hidden">
                                 <a href="../images/image21.jpg" target="_blank" data-lightbox="gridImg" data-title="Branding Mockup">
-                                    <img src="../images/image21.jpg" alt="" id="img-1">
+                                    <img src="../images/image21.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="vStretch">
+                            <div class="vStretch hidden">
                                 <a href="../images/image22.jpg" target="_blank" data-lightbox="gridImg" data-title="Mountain Dew Branding Mockup">
-                                    <img src="../images/image22.jpg" alt="" id="img-1">
+                                    <img src="../images/image22.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="hStretch">
+                            <div class="hStretch hidden">
                                 <a href="../images/image23.jpg" target="_blank" data-lightbox="gridImg" data-title="Mountain Dew Branding Mockup">
-                                    <img src="../images/image23.jpg" alt="" id="img-1">
+                                    <img src="../images/image23.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="hStretch">
+                            <div class="hStretch hidden">
                                 <a href="../images/image24.jpg" target="_blank" data-lightbox="gridImg" data-title="Mountain Dew Branding Mockup">
-                                    <img src="../images/image24.jpg" alt="" id="img-1">
+                                    <img src="../images/image24.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="hStretch">
+                            <div class="hStretch hidden">
                                 <a href="../images/image25.jpg" target="_blank" data-lightbox="gridImg" data-title="Mountain Dew Branding Mockup">
-                                    <img src="../images/image25.jpg" alt="" id="img-1">
+                                    <img src="../images/image25.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="hStretch">
+                            <div class="hStretch hidden">
                                 <a href="../images/image26.jpg" target="_blank" data-lightbox="gridImg" data-title="Signature Market Seasonal Branding">
-                                    <img src="../images/image26.jpg" alt="" id="img-1">
+                                    <img src="../images/image26.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div>
+                            <div class="hidden">
                                 <a href="../images/image27.jpg" target="_blank" data-lightbox="gridImg" data-title="Signature Market Seasonal Branding">
-                                    <img src="../images/image27.jpg" alt="" id="img-1">
+                                    <img src="../images/image27.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="lgStretch">
+                            <div class="lgStretch hidden">
                                 <a href="../images/image28.jpg" target="_blank" data-lightbox="gridImg" data-title="Signature Market Seasonal Branding">
-                                    <img src="../images/image28.jpg" alt="" id="img-1">
+                                    <img src="../images/image28.jpg" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
-                            <div class="lgStretch">
+                            <div class="lgStretch hidden">
                                 <a href="../images/image29.png" target="_blank" data-lightbox="gridImg" data-title="Winter Solstice Social Media Posting">
-                                    <img src="../images/image29.png" alt="" id="img-1">
+                                    <img src="../images/image29.png" alt="" id="img-1" loading="lazy">
                                 </a>
                             </div>
+                        </div>
 
+                        <div class="d-flex justify-content-center mt-4">
+                            <button type="button" class="btn btnLoad">Load Images</button>
                         </div>
 
                     </div>
