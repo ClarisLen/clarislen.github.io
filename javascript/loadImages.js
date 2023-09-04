@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageContainer = imagesContainer.children;
 
     btnLoad.addEventListener("click", () => {
-        for(let i in imageContainer){
+        for (let i in imageContainer) {
             try {
-                if(imageContainer[i].classList.contains("hidden")){
+                if (imageContainer[i].classList.contains("hidden")) {
                     imageContainer[i].classList.remove("hidden");
                 }
             } catch (e) {
@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 return false;
             }
         }
-    })
-})
+    });
+});

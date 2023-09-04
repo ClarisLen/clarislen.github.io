@@ -768,11 +768,6 @@ footer p{
     }
 }
 
-.btnLoad{
-    background-color: #fff;
-    color: var(--secondaryColor);
-}
-
 @media only screen and (max-width:2500px){
     .sidebar{
         width: 270px;

@@ -1,18 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    let homeLinks = document.querySelectorAll("#homeTab .cardSec .cardWrapper");
-    let projectLinks = document.querySelectorAll("#projectTab .cardWrapper a");
-    let graphicLinks = document.querySelectorAll("#graphicTab a");
+    const homeLinks = document.querySelectorAll("#homeTab .cardSec .cardWrapper");
+    const projectLinks = document.querySelectorAll("#projectTab .customCursor a");
+    const graphicLinks = document.querySelectorAll("#graphicTab a");
     const cursor = document.querySelector(".cursor");
 
     // ENABLE JAVASCRIPT SHOW CURSOR
     cursor.classList.remove("hidden");
 
     // HOVER ADD CLASS
-    function mouseHover(e){
-        this.style.cursor ="none";
+    function mouseHover(e) {
+        this.style.cursor = "none";
         cursor.classList.remove("hidden");
-        return cursor.setAttribute("style", "top: " +(e.pageY - 50)+"px; left: "+(e.pageX - 50)+"px");
+        return cursor.setAttribute("style", "top: " + (e.pageY - 50) + "px; left: " + (e.pageX - 50) + "px");
     }
 
     // NO HOVER REMOVE
@@ -22,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // CLASS ARRAY LOOP EVENTS
-    function arrAddEvent(){
-        let classArr = [...homeLinks, ...projectLinks, ...graphicLinks];
-        for (let i = 0; i < classArr.length; i++){
+    function arrAddEvent() {
+        const classArr = [...homeLinks, ...projectLinks, ...graphicLinks];
+        for (let i = 0; i < classArr.length; i++) {
             classArr[i].addEventListener("mousemove", mouseHover);
             classArr[i].addEventListener("mouseout", mouseExit);
         }
